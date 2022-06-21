@@ -1,3 +1,8 @@
+if [ $# -ne 3 ]; then
+  echo "[error]: not enough arguments."
+  echo "usage: $0 <server> <user> <password>"
+  exit 0
+fi
 
 docker stop ssvpn_instance
 docker rm ssvpn_instance
