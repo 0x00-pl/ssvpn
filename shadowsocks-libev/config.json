@@ -4,6 +4,5 @@
   "server_port": 4443,
   "password": "123456",
   "timeout": 60,
-  "method": "chacha20-ietf-poly1305",
-  "nameserver": "192.168.1.8"
+  "method": "chacha20-ietf-poly1305"
 }
