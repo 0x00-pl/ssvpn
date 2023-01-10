@@ -4,6 +4,8 @@ if [ $# -ne 3 ]; then
   exit 0
 fi
 
+cd "$(dirname "$0")" || exit
+
 docker stop ssvpn_instance
 docker rm ssvpn_instance
 docker build . -t ssvpn
